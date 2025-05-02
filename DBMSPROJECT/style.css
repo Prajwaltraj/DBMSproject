@@ -1,0 +1,237 @@
+/* RESET & GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #80caff, #004080);
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+/* HEADER */
+header {
+  background-color: rgba(0, 0, 50, 0.7);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* COURSE SECTION */
+.course-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.course-container h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.courses {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.course-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.course-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.course-card p {
+  font-size: 14px;
+  color: #f0f0f0;
+}
+
+.course-card button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #003366;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.course-card button:hover {
+  background-color: #002244;
+}
+
+/* FOOTER */
+footer {
+  background-color: rgba(0, 0, 50, 0.7);
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* LOGIN & SIGNUP COMMON */
+.login-card {
+  max-width: 400px;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.login-card input:focus {
+  outline: 2px solid #3399ff;
+}
+
+.sign-in-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sign-in-btn:hover {
+  background-color: #002244;
+}
+
+.forgot {
+  text-align: right;
+  font-size: 12px;
+  margin-top: -5px;
+}
+
+.login-card a {
+  color: #cce7ff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-login img {
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social-login img:hover {
+  transform: scale(1.1);
+}
+
+/* BACKGROUND SHAPES (OPTIONAL) */
+.background-shapes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background-shapes .circle1,
+.background-shapes .circle2 {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+  background: #ffffff;
+}
+
+.background-shapes .circle1 {
+  width: 300px;
+  height: 300px;
+  top: 10%;
+  left: 5%;
+}
+
+.background-shapes .circle2 {
+  width: 200px;
+  height: 200px;
+  bottom: 15%;
+  right: 10%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .courses {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course-card {
+    width: 90%;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
